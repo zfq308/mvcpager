@@ -228,7 +228,7 @@ namespace HeyCoder.Web.Mvc.Pager
                 string txtID = Guid.NewGuid().ToString();
                 string funcName = "func_" + Guid.NewGuid().ToString().Replace("-", "");
                 strs.AppendFormat("<input class='{0}' id='{1}'/>", option.GotoPageInputClassName, txtID);
-                strs.AppendFormat("<a class='{0}' href='javascript:{2}();'>{1}</a>", option.GotoPageInputClassName, option.GotoPageBtuttonText, funcName);
+                strs.AppendFormat("<a class='{0}' href='javascript:{2}();'>{1}</a>", option.GotoPageButtonClassName, option.GotoPageBtuttonText, funcName);
                 string js = @"<script type='text/javascript'>
                                         function funcName()
                                         {
